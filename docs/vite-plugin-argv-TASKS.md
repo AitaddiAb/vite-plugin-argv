@@ -106,8 +106,8 @@
 - [ ] Add GitHub repo topics: `vite`, `vite-plugin`, `cli`, `build-tool`
 - [ ] Submit to `awesome-vite` list (GitHub PR)
 - [ ] Post announcement on relevant communities (Reddit r/vuejs, Dev.to, X)
-- [ ] Set up GitHub Issues templates (bug report, feature request)
-- [ ] Set up GitHub Actions CI: run tests on push + PR
-- [ ] Set up GitHub Actions publish: auto-publish to npm on version tag
+- [x] Set up GitHub Issues templates (bug report, feature request)
+- [x] Set up GitHub Actions CI: run tests on push + PR
+- [x] Set up GitHub Actions publish: auto-publish to npm on version tag
 - [ ] Monitor npm weekly downloads
 - [ ] Collect first issues / feedback and triage for v1.1
