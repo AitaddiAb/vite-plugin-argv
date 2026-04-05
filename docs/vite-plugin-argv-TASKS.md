@@ -92,10 +92,10 @@
 - [x] Verify `peerDependencies`: `vite >= 4.0.0`
 - [x] Verify `engines` field: `node >= 18.0.0`
 - [x] Dry run: `pnpm publish --dry-run` and inspect tarball contents
-- [ ] Tag release: `git tag v0.1.0`
-- [ ] Publish: `pnpm publish`
-- [ ] Verify package page on npmjs.com
-- [ ] Verify install works in a fresh Vite project: `pnpm add -D vite-plugin-argv`
+- [x] Tag release: `git tag v0.1.0`
+- [x] Publish: `pnpm publish`
+- [x] Verify package page on npmjs.com
+- [x] Verify install works in a fresh Vite project: `pnpm add -D vite-plugin-argv`
 
 ---
 
