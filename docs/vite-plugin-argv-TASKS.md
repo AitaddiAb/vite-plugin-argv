@@ -68,19 +68,19 @@
 
 > Goal: README good enough that a stranger can use the plugin in 2 minutes.
 
-- [ ] Write `README.md`
-  - [ ] One-line description
-  - [ ] Install section (`pnpm add -D vite-plugin-argv`)
-  - [ ] Setup section (plugin registration in `vite.config.js`)
-  - [ ] CLI args reference table
-  - [ ] `package.json` usage examples (serve, build, combined)
-  - [ ] Note on `--` requirement and why
-  - [ ] Error handling behavior
-  - [ ] Compatibility table (Vite version, Node version)
-- [ ] Update PRD with final CLI arg decision (`--` required, no binary)
-- [ ] Write `CHANGELOG.md` with `v0.1.0` entry
-- [ ] Write `CONTRIBUTING.md` (setup, build, test commands)
-- [ ] Add `LICENSE` file (MIT)
+- [x] Write `README.md`
+  - [x] One-line description
+  - [x] Install section (`pnpm add -D vite-plugin-argv`)
+  - [x] Setup section (plugin registration in `vite.config.js`)
+  - [x] CLI args reference table
+  - [x] `package.json` usage examples (serve, build, combined)
+  - [x] Note on `--` requirement and why
+  - [x] Error handling behavior
+  - [x] Compatibility table (Vite version, Node version)
+- [x] Update PRD with final CLI arg decision (`--` required, no binary)
+- [x] Write `CHANGELOG.md` with `v0.1.0` entry
+- [x] Write `CONTRIBUTING.md` (setup, build, test commands)
+- [x] Add `LICENSE` file (MIT)
 
 ---
 

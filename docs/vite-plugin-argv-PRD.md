@@ -218,8 +218,8 @@ vite-plugin-argv/
 ├── src/
 │   └── index.ts          # plugin source (TypeScript)
 ├── dist/
-│   ├── index.js          # CJS build
-│   ├── index.mjs         # ESM build
+│   ├── index.js          # ESM build
+│   ├── index.cjs         # CJS build
 │   └── index.d.ts        # type declarations
 ├── package.json
 ├── tsconfig.json
@@ -234,13 +234,13 @@ vite-plugin-argv/
   "name": "vite-plugin-argv",
   "version": "0.1.0",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     }
   },
