@@ -88,14 +88,12 @@
 
 > Goal: live on npm, installable by anyone.
 
-- [ ] Add `pnpm-lock.yaml` to `.gitignore` exceptions (commit the lockfile)
-- [ ] Verify `package.json` `files` field includes only `dist/` and `README.md`
-- [ ] Verify `peerDependencies`: `vite >= 4.0.0`
-- [ ] Verify `engines` field: `node >= 18.0.0`
-- [ ] Dry run: `pnpm publish --dry-run` and inspect tarball contents
-- [ ] Create npm account / verify org scope if needed
+- [x] Verify `package.json` `files` field includes `dist/` and `README.md`
+- [x] Verify `peerDependencies`: `vite >= 4.0.0`
+- [x] Verify `engines` field: `node >= 18.0.0`
+- [x] Dry run: `pnpm publish --dry-run` and inspect tarball contents
 - [ ] Tag release: `git tag v0.1.0`
-- [ ] Publish: `pnpm publish --access public`
+- [ ] Publish: `pnpm publish`
 - [ ] Verify package page on npmjs.com
 - [ ] Verify install works in a fresh Vite project: `pnpm add -D vite-plugin-argv`
 

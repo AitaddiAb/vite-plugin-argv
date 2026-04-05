@@ -28,8 +28,8 @@ describe('Integration — Vite Build', () => {
 
     // Run build with hooks
     const output = execSync(
-      `npx vite build -- --before-build="echo 'HOOK_BEFORE'" --after-build="echo 'HOOK_AFTER'"`,
-      { cwd: root, encoding: 'utf8' }
+      `pnpm vite build -- --before-build="echo 'HOOK_BEFORE'" --after-build="echo 'HOOK_AFTER'"`,
+      { cwd: root, encoding: 'utf8', stdio: 'pipe' }
     );
 
     expect(output).toContain('[vite-plugin-argv] Running: echo \'HOOK_BEFORE\'');
@@ -55,7 +55,7 @@ describe('Integration — Vite Build', () => {
 
     // Run failing build
     expect(() => {
-      execSync(`npx vite build -- --before-build="exit 42"`, { cwd: root, stdio: 'pipe' });
+      execSync(`pnpm vite build -- --before-build="exit 42"`, { cwd: root, stdio: 'pipe' });
     }).toThrow(/exit code 42/);
 
     rmSync(root, { recursive: true, force: true });
