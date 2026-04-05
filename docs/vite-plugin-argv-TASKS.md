@@ -31,18 +31,18 @@
 
 > Goal: working plugin covering all four hooks.
 
-- [ ] Create `src/index.ts` with named + default export
-- [ ] Implement `getArgValue(key)` — parses `process.argv` for `key=value` and `key value` forms
-- [ ] Implement `isBuild` / `isServe` mode detection from `process.argv`
-- [ ] Implement `spawnShell(cmd)` — `child_process.spawn` with `shell: true`, `stdio: inherit`
-- [ ] Implement `--before-serve` hook via `configureServer` (gated on `isServe`)
-- [ ] Implement `--after-serve` hook via `configureServer` → `httpServer.once('listening')` (gated on `isServe`)
-- [ ] Implement `--before-build` hook via `buildStart` (gated on `isBuild`)
-- [ ] Implement `--after-build` hook via `closeBundle` (gated on `isBuild`)
-- [ ] Implement error handling: stderr message + `process.exit(1)` on non-zero exit
-- [ ] Implement no-op behavior when a hook arg is not present (plugin stays silent)
-- [ ] Export correct TypeScript types (`Plugin` return type from `vite`)
-- [ ] Manual smoke test: `vite dev` + `vite build` with all four args
+- [x] Create `src/index.ts` with named + default export
+- [x] Implement `getArgValue(key)` — parses `process.argv` for `key=value` and `key value` forms
+- [x] Implement `isBuild` / `isServe` mode detection from `process.argv`
+- [x] Implement `spawnShell(cmd)` — `child_process.spawn` with `shell: true`, `stdio: inherit`
+- [x] Implement `--before-serve` hook via `configureServer` (gated on `isServe`)
+- [x] Implement `--after-serve` hook via `configureServer` → `httpServer.once('listening')` (gated on `isServe`)
+- [x] Implement `--before-build` hook via `buildStart` (gated on `isBuild`)
+- [x] Implement `--after-build` hook via `closeBundle` (gated on `isBuild`)
+- [x] Implement error handling: stderr message + `process.exit(1)` on non-zero exit
+- [x] Implement no-op behavior when a hook arg is not present (plugin stays silent)
+- [x] Export correct TypeScript types (`Plugin` return type from `vite`)
+- [x] Manual smoke test: `vite dev` + `vite build` with all four args
 
 ---
 
