@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-argv",
+  "version": "0.1.0",
+  "description": "Powerful CLI integration for Vite hooks. Run shell commands before/after serve/build via command-line arguments.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "cli",
+    "argv",
+    "hooks",
+    "build",
+    "serve"
+  ],
+  "author": "Aitaddi Ab",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
+  }
+}

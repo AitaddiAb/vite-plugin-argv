@@ -16,14 +16,14 @@
 > Goal: clean, minimal repo ready for development.
 
 - [x] Initialize repo on GitHub: `vite-plugin-argv`
-- [ ] `pnpm init` with correct fields (`name`, `version`, `type: "module"`, `license: "MIT"`)
-- [ ] Install dev dependencies: `pnpm add -D vite typescript tsup`
-- [ ] Configure `tsconfig.json` (target ESNext, moduleResolution bundler, strict)
-- [ ] Configure `tsup.config.ts` (entry `src/index.ts`, format `cjs,esm`, dts enabled)
-- [ ] Set up `.gitignore` (`node_modules`, `dist`, `build`)
-- [ ] Set up `package.json` exports map (CJS + ESM + types)
-- [ ] Set up `package.json` scripts: `build`, `dev` (watch mode)
-- [ ] Verify `tsup` build produces `dist/index.js`, `dist/index.mjs`, `dist/index.d.ts`
+- [x] `pnpm init` with correct fields (`name`, `version`, `type: "module"`, `license: "MIT"`)
+- [x] Install dev dependencies: `pnpm add -D vite typescript tsup`
+- [x] Configure `tsconfig.json` (target ESNext, moduleResolution bundler, strict)
+- [x] Configure `tsup.config.ts` (entry `src/index.ts`, format `cjs,esm`, dts enabled)
+- [x] Set up `.gitignore` (`node_modules`, `dist`, `build`)
+- [x] Set up `package.json` exports map (CJS + ESM + types)
+- [x] Set up `package.json` scripts: `build`, `dev` (watch mode)
+- [x] Verify `tsup` build produces `dist/index.cjs`, `dist/index.js`, `dist/index.d.ts`
 
 ---
 
