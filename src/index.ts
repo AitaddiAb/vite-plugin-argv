@@ -4,7 +4,7 @@ import type { Plugin } from "vite";
 /**
  * Helper to extract the value of a CLI argument (e.g. --key=value or --key value)
  */
-function getArgValue(key: string): string | undefined {
+export function getArgValue(key: string): string | undefined {
   const args = process.argv;
   const index = args.findIndex(
     (arg: string) => arg.startsWith(`${key}=`) || arg === key,
@@ -30,7 +30,7 @@ function getArgValue(key: string): string | undefined {
  * Spawns a shell command and inherits stdio.
  * Returns a promise that resolves on exit 0 or rejects otherwise.
  */
-function spawnShell(cmd: string): Promise<void> {
+export function spawnShell(cmd: string): Promise<void> {
   return new Promise((resolve, reject) => {
     console.log(`\n[vite-plugin-argv] Running: ${cmd}`);
 

@@ -50,17 +50,17 @@
 
 > Goal: confidence before publishing.
 
-- [ ] Install test runner: `pnpm add -D vitest`
-- [ ] Unit test `getArgValue()` — present, missing, `=` form, space form, edge cases
-- [ ] Unit test `isBuild` / `isServe` detection
-- [ ] Integration test `--after-build` fires after build completes
-- [ ] Integration test `--before-build` fires before build starts
-- [ ] Integration test `--after-serve` fires only after server is listening
-- [ ] Integration test `--before-serve` fires before server accepts connections
-- [ ] Test hook isolation: build hooks don't fire in serve mode and vice versa
-- [ ] Test failure propagation: failing command exits process with code 1
-- [ ] Test no-op: plugin registers without any args, Vite works normally
-- [ ] Test chained commands: `cmd1 && cmd2` works correctly via shell
+- [x] Install test runner: `pnpm add -D vitest`
+- [x] Unit test `getArgValue()` — present, missing, `=` form, space form, edge cases
+- [x] Unit test `isBuild` / `isServe` detection
+- [x] Integration test `--after-build` fires after build completes
+- [x] Integration test `--before-build` fires before build starts
+- [x] Integration test `--after-serve` fires only after server is listening
+- [x] Integration test `--before-serve` fires before server accepts connections
+- [x] Test hook isolation: build hooks don't fire in serve mode and vice versa
+- [x] Test failure propagation: failing command exits process with code 1
+- [x] Test no-op: plugin registers without any args, Vite works normally
+- [x] Test chained commands: `cmd1 && cmd2` works correctly via shell
 
 ---
 
